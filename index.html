@@ -7,12 +7,12 @@
     <link rel="stylesheet" href="style.css" />
     <script>
         function openOption() {
-            const selectElement = document.getElementById("option");
-            const selectOption = selectElement.value;
-            console.log(selectOption);
+            const selectElement = document.getElementById("options").value;
+            console.log(selectElement);
+            window.location.href = selectElement;
         }
-
     </script>
+
 </head>
 
 <body>
@@ -31,9 +31,25 @@
                 </ul>
             </nav>
         </header>
+
         <!--title-->
         <h1 class="heading">Image &nbsp; Search &nbsp; Platform</h1>
 
+
+        <div class="container">
+            <label class="categories">SELECT ONE CATEGORY : &nbsp;</label>
+            <select id="options">
+                <option value=""> -------</option>
+                <option value="Pages/space.html">Space related search</option>
+                <option value="Pages/underwater.html">bandini</option>
+                <option value="teju">teju</option>
+                <option value="Pages/spaceships.html">mahesh</option>
+                <option value="Pages/seven.html">sonali</option>
+                <option value="harsh">harsh</option>
+
+            </select>
+            <button class="btn" onclick="openOption()">click</button>
+        </div>
 </body>
 
 </html>
