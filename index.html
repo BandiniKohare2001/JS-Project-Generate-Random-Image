@@ -34,35 +34,6 @@
         <!--title-->
         <h1 class="heading">Image &nbsp; Search &nbsp; Platform</h1>
 
-
-        <div class="container">
-            <label class="categories">SELECT ONE CATEGORY : &nbsp;</label>
-            <select id="pageSelect" onchange="jumpToPage()">
-                <option value=""> -------</option>
-                <option value="">Space Images</option>
-                <option value="">Underwater Images</option>
-                <option value="teju">teju</option>
-                <option value="mahesh">mahesh</option>
-                <option value="sonali">sonali</option>
-                <option value="harsh">harsh</option>
-
-            </select>
-
-        </div>
-        <script>
-
-            function jumpToPage() {
-                const select = document.write.getElementById("pageSelect");
-                const value = select.options[select.selectedIndex].value;
-                if (value) {
-                    window.location.href = value;
-                }
-            }
-        </script>
-        <!---<div class="div-intro">
-     <p><h3>purpose of random search<br></h3><br>
-         Random search is a technique where random combinations of the hyperparameters are used to find the best solution for the built model. It is similar to grid search, and yet it has proven to yield better results comparatively. The drawback of random search is that it yields high variance during computing</p>
- </div>--->
 </body>
 
 </html>

@@ -51,13 +51,7 @@
     color: #d4cfeb;
     text-transform: uppercase;
   }
-  .container {
-    display: flex;
-    margin-left: 60px;
-    align-items: center;
-    height: 10vh;
-  
-  }
+ 
   
   label {
     color: white;
@@ -71,3 +65,17 @@
     color: #f0e0e0;
     font-size: 20px;
   }*/
+  .category-heading{
+    color: #fff;
+    margin-top: 50px;
+    margin-bottom: 30px;
+    margin-left: 300px;
+    text-decoration: none !important;
+  }
+  .category-heading{
+    color: #fff;
+    margin-top: 50px;
+    margin-bottom: 30px;
+    margin-left: 300px;
+    text-decoration: none !important;
+  }
