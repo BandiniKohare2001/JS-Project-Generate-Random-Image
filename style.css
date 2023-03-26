@@ -68,3 +68,20 @@ label {
   margin: 20px;
   width: 50px;
 }
+.categories
+{
+  font-size: 26px;
+  margin-left: 260px;
+  margin-top: 170px;
+}
+#options{
+  font-size: 25px;
+  margin-top: 170px;
+}
+.btn{
+  height: 33px;
+  font-size: 22px;
+  margin-top: 190px;
+  width: 100px;
+  background-color: bisque;
+}
