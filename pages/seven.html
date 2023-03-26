@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Seven Wonders images</title>
+
+    <style>
+        body {
+            background-image: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT6V76HSTDsg_9GfHBiLA9huLJ3xLkaAlfD62dCT9V7jMpamq0pAaMrbo1GxCvDQHg_wog&usqp=CAU);
+            width: 100%;
+            height: 100vh;
+            background-position: center;
+            background-size: cover;
+        }
+
+        header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 10px;
+            color: #fff;
+        }
+
+        .logo img {
+            height: 50px;
+            margin-left: 20px;
+        }
+
+        nav ul {
+            display: flex;
+            list-style: none;
+            margin: 0;
+            padding: 0;
+        }
+
+        nav li {
+            margin-left: 20px;
+        }
+
+        nav li:first-child {
+            margin-left: 0;
+        }
+
+        nav a {
+            color: #fff;
+            text-decoration: none;
+
+        }
+
+        .heading {
+            margin-top: 30px;
+            margin-left: 80px;
+            margin-bottom: 20px;
+            font-weight: bold;
+            color: #120c2f;
+            text-transform: uppercase;
+        
+        }
+
+        img {
+            display: block;
+            margin: 0 auto;
+            max-width: 80%;
+            max-height: 400px;
+            margin-top: 40px;
+            border-radius: 30px;
+        }
+        #generate-button:hover{
+            background-color: #dd5c5c;
+            height: 50px;
+            width: 250px;
+            font-size: large;
+        } 
+        #generate-button {
+            height: 50px;
+            width: 250px;
+            display: block;
+            margin: 0 auto;
+            margin-top: 50px;
+            padding: 10px 20px;
+            background-color: #a0529d;
+            color: #fff;
+            border: none;
+            border-radius: 5px;
+            font-size: 16px;
+            cursor: pointer;
+        }
+
+        button:hover {
+            background-color: #3e8e41;
+            height: 60px;
+            width: 210px;
+        }
+
+        .ul:hover {
+            background-color: rgb(181, 88, 103);
+        }
+
+        .ul {
+            font-size: 15px;
+        }
+
+        /*----js----------*/
+    .path {
+
+            margin-bottom: 40px;
+            height: 60px;
+            display: flex;
+           
+        }
+        #image-path {
+            height: 44px;
+            width: 700px;
+            padding: 12px 20px;
+            box-sizing: border-box;
+            border: 2px solid #ccc;
+            border-radius: 5px;
+            background-color: #f8f8f8;
+            font-size: 16px;
+            margin-left: 340px;
+            margin-top: 50px;
+        }
+        .copy-btn {
+            background-color: white;
+            border: none;
+            cursor: pointer;
+            border-radius: 3px;
+            height: 30px;
+            width: 30px;
+            padding: 6px;
+            margin-left:5px;
+            margin-top: 50px;
+        }
+     .divb{
+  height: 5px;
+  margin-bottom: 40px;
+}
+    </style>
+</head>
+<body>
+    <div class="background">
+        <!--header section-->
+        <header>
+            <div class="logo">
+                <a href="/index.html"><img src="/images/icon.png" alt="Icon" />
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="/index.html" class="ul">Home</a></li>
+                    <li><a href="#" class="ul">Contact</a></li>
+                    <li><a href="#" class="ul">Services</a></li>
+                    <li><a href="#" class="ul">About</a></li>
+                </ul>
+            </nav>
+        </header>
+        <h1 class="heading">Explore &nbsp; the &nbsp; Seven Wonders &nbsp; Images</h1><br>
+
+        <div class="image-container">
+            <img id="random-image" src="">
+        </div>
+        <div class="button-container">
+            <button id="generate-button">Generate Random Image</button>
+        </div>
+
+
+        <div class="path">
+            <input type="text" id="image-path" value="" readonly> &nbsp; &nbsp;
+            <img src="/images/copy.png" class="copy-btn" id="copy-button" />
+        </div><div class="divb"></div>
+    </div>
+    
+    <!------------------------Javascript---------------------------->
+    <script>
+        const generateButton = document.getElementById('generate-button');
+        const copyButton = document.getElementById('copy-button');
+        const imagePath = document.getElementById('image-path');
+        const randomImage = document.getElementById('random-image');
+
+        const imageUrls = [
+            "/images/Colosseum in Rome.jpg",
+            "/images/great wall of china.jpg",
+            "/images/chichen itza.jpg",
+            "/images/matchu picchu.jpg",
+            "/images/christ the redeemer.jpg",
+            "/images/taj mahal.jpg",
+            "/images/the treasury.jpg",
+        
+        ];
+
+        function generateImage() {
+            const randomIndex = Math.floor(Math.random() * imageUrls.length);
+            const imageUrl = imageUrls[randomIndex];
+            randomImage.src = imageUrl;
+            imagePath.value = imageUrl;
+        }
+
+        function copyImagePath() {
+            imagePath.select();
+            document.execCommand("copy");
+            alert("Image path copied to clipboard!");
+        }
+
+        generateButton.addEventListener('click', generateImage);
+        copyButton.addEventListener('click', copyImagePath)
+    </script>
+</body>
+</html>
