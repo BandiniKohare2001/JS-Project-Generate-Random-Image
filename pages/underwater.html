@@ -34,5 +34,44 @@
             <img src="/images/copy.png" class="copy-btn" id="copy-button" />
         </div>
     </div>
+    
+    <!------------------------Javascript---------------------------->
+    <script>
+        const generateButton = document.getElementById('generate-button');
+        const copyButton = document.getElementById('copy-button');
+        const imagePath = document.getElementById('image-path');
+        const randomImage = document.getElementById('random-image');
+
+        const imageUrls = [
+            "/images/fish2.jpg",
+            "/images/fish3.jpg",
+            "/images/fish4.jpg",
+            "/images/fish5.jpg",
+            "/images/fish6.jpg",
+            "/images/fish7.jpg",
+            "/images/fish8.jpg",
+            "/images/fish9.jpg",
+            "/images/fish10.jpg",
+            "/images/fish11.jpg",
+            "/images/fish12.jpg",
+            "/images/fish13.jpg",
+        ];
+
+        function generateImage() {
+            const randomIndex = Math.floor(Math.random() * imageUrls.length);
+            const imageUrl = imageUrls[randomIndex];
+            randomImage.src = imageUrl;
+            imagePath.value = imageUrl;
+        }
+
+        function copyImagePath() {
+            imagePath.select();
+            document.execCommand("copy");
+            alert("Image path copied to clipboard!");
+        }
+
+        generateButton.addEventListener('click', generateImage);
+        copyButton.addEventListener('click', copyImagePath)
+    </script>
 </body>
 </html>
