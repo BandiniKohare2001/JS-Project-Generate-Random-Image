@@ -412,16 +412,16 @@ label {
 {
   font-size: 26px;
   margin-left: 260px;
-  margin-top: 170px;
+  margin-top: 100px;
 }
 #options{
   font-size: 25px;
-  margin-top: 170px;
+  margin-top: 100px;
 }
 .btn{
   height: 33px;
   font-size: 22px;
-  margin-top: 190px;
+  margin-top: 120px;
   width: 100px;
   background-color: bisque;
 }
@@ -431,7 +431,7 @@ label {
   position: relative;
   height: 100px;
  
-  margin-left: 100px;
+  margin-left: 200px;
   margin-bottom: 40px;
 }
 
@@ -521,5 +521,7 @@ label {
 }
 
 .hr{
-  margin-top: 200px;
+  margin-top: 180px;
+  margin-left: 50px;
+  margin-right: 50px;
 }
