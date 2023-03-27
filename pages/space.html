@@ -63,9 +63,7 @@ nav a {
 img {
   display: block;
   margin: 0 auto;
-  max-width: 80%;
-  max-height: 370px;
-  margin-top: 50px;
+  height: 300px;
   border-radius: 30px;
 }
 #generate-button:hover {
@@ -110,17 +108,17 @@ button:hover {
   display: flex;
 }
 #image-path {
-  height: 40px;
-  width: 700px;
-  padding: 12px 20px;
-  box-sizing: border-box;
-  border: 2px solid #ccc;
-  border-radius: 5px;
-  background-color: #f8f8f8;
-  font-size: 16px;
-  margin-left: 340px;
-  margin-top: 80px;
-}
+            height: 44px;
+            width: 900px;
+            padding: 12px 20px;
+            box-sizing: border-box;
+            border: 2px solid #ccc;
+            border-radius: 5px;
+            background-color: #f8f8f8;
+            font-size: 16px;
+            margin-left: 160px;
+            margin-top: 50px;
+        }
 .copy-btn {
   background-color: white;
   border: none;
@@ -130,7 +128,7 @@ button:hover {
   width: 40px;
   padding: 6px;
   margin-left: 5px;
-  margin-top: 80px;
+  margin-top: 50px;
 }
 .divb{
   height: 5px;
@@ -183,14 +181,16 @@ button:hover {
         const randomImage = document.getElementById('random-image');
 
         const imageUrls = [
-            "/images/image1.jpg",
-            "/images/image2.jpg",
-            "/images/image3.jpg",
-            "/images/image4.jpg",
-            "/images/image5.jpg",
-            "/images/image6.jpg",
-            "/images/image7.jpg",
-            "/images/image8.jpg",
+            "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTABRg1Q_VJwjPf38XxMeiG7eCUmpy-Iz2lwhx3RAZfCrdXFUbYxnuNvk7LM2s3UeRLpww&usqp=CAU",
+            "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTsIHn57u9EUYTDHZHlVWyJTwWzPm3ygCnb6g&usqp=CAU",
+            "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRgr_rRJ3nSIchxNmZIIT-x-d5CXDS1htn8oQ&usqp=CAU",
+            "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSgGxLKxWtllZNiq4P_f5tS5b2CKtPntTKJFw&usqp=CAU",
+            "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQEKNAEk1f9PzAkyz5b8j59SvSlaWbLz338mw&usqp=CAU",
+            "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSuLZjab2hb8Mu5qZAeE1N1RXlrahRw1LumXw&usqp=CAU",
+            "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQQZ9zS3wIfbt7R1doud9Orx0MlCP0-bzC2Kw&usqp=CAU",
+            "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTo3EwEdzdUs6GtLmGyFLcClr-UipWleLJApA&usqp=CAU",
+            "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcScX641I3AYU3cM8mF8LNxM8soSK4P6Ug9IEEgP2TmD0Gg3v3_766KwRK1NgE08hl9bPzM&usqp=CAU",
+            "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRobgWwDuEzRUAf31UPt01fjbodW0NtEYaf9w&usqp=CAU"
         ];
 
         function generateImage() {

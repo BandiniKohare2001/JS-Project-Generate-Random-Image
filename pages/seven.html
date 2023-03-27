@@ -5,7 +5,7 @@
 
     <style>
         body {
-            background-image: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT6V76HSTDsg_9GfHBiLA9huLJ3xLkaAlfD62dCT9V7jMpamq0pAaMrbo1GxCvDQHg_wog&usqp=CAU);
+            background-image: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQf-0FqvAKtt72IYj1p7xsHoIoYDOXpOeHkKws2SHijg1sTdD5DtiFyI7L0_2LDfesy_vo&usqp=CAU);
             width: 100%;
             height: 100vh;
             background-position: center;
@@ -51,7 +51,7 @@
             margin-left: 80px;
             margin-bottom: 20px;
             font-weight: bold;
-            color: #120c2f;
+            color: #e9e8f1;
             text-transform: uppercase;
         
         }
@@ -109,16 +109,17 @@
         }
         #image-path {
             height: 44px;
-            width: 700px;
+            width: 900px;
             padding: 12px 20px;
             box-sizing: border-box;
             border: 2px solid #ccc;
             border-radius: 5px;
             background-color: #f8f8f8;
             font-size: 16px;
-            margin-left: 340px;
+            margin-left: 160px;
             margin-top: 50px;
         }
+        
         .copy-btn {
             background-color: white;
             border: none;
@@ -176,14 +177,13 @@
         const randomImage = document.getElementById('random-image');
 
         const imageUrls = [
-            "/images/Colosseum in Rome.jpg",
-            "/images/great wall of china.jpg",
-            "/images/chichen itza.jpg",
-            "/images/matchu picchu.jpg",
-            "/images/christ the redeemer.jpg",
-            "/images/taj mahal.jpg",
-            "/images/the treasury.jpg",
-        
+            "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSVG0QWTTyIlS5579mXQYrQ2PAta3qKQ6HHjA&usqp=CAU",
+            "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTG7KdUjktGp99bqFkqhsNT8o40Diam9bk2_w&usqp=CAU",
+            "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRMota-Dv1bMnMX3U7uPe82wfB0-vyNtbmcHw&usqp=CAU",
+            "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRlavhJE83Lt0Zlb5wNjuWMJsM0QmfVsY-xFz2YSpperOuMnT60XGW5HXR6LbLcI0HeQsY&usqp=CAU",
+            "https://ca-times.brightspotcdn.com/dims4/default/094df7b/2147483647/strip/false/crop/500x350+0+0/resize/500x350!/quality/80/?url=https%3A%2F%2Fcalifornia-times-brightspot.s3.amazonaws.com%2F6f%2Fab%2F7fa1ddd991f0d12458276fb35ceb%2Fla-sevenwonders1-jku3c3nc",
+            "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTw_-iACzelWqomVcGg1qY8K8-Z4Ddw2KGgog&usqp=CAU",
+            "https://newsmobile.in/wp-content/uploads/2019/01/7-wonders-1-1.jpg"
         ];
 
         function generateImage() {

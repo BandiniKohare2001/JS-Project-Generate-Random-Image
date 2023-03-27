@@ -2,12 +2,41 @@
 <html lang="en">
 <head>
     <title> ABOUT US </title>
-    <style>*{
-        font-family: 'Anton', sans-serif;
-        font-family: 'Russo One', sans-serif;
-        font-family: 'Signika', sans-serif;
-    
-    }
+    <style>
+        header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 10px;
+            color: #fff;
+        }
+
+        .logo img {
+            height: 50px;
+            margin-left: 20px;
+        }
+
+        nav ul {
+            display: flex;
+            list-style: none;
+            margin: 0;
+            padding: 0;
+        }
+
+        nav li {
+            margin-left: 20px;
+        }
+
+        nav li:first-child {
+            margin-left: 0;
+        }
+
+        nav a {
+            color: #fff;
+            text-decoration: none;
+
+        }
+
     .h1{
         color: aliceblue;
     }
@@ -42,7 +71,7 @@
         text-align: center;
         transition: 0.4s ease-in-out;
         margin-top:50px;
-        background-color: white;
+        background-color: rgb(247, 247, 252);
         color: #800000;
     }
     .name
@@ -140,10 +169,28 @@
         border-radius:10px;
         margin-left: 280px;
         margin-right: auto;
-    }</style>
+    }
+    
+    </style>
     </head>
     <body>
-    <h2 class="h1"> our mentors</h2>
+        <div class="background">
+            <!--header section-->
+            <header>
+                <div class="logo">
+                    <a href="/index.html"><img src="/images/icon.png" alt="Icon" />
+                </div>
+                <nav>
+                    <ul>
+                        <li><a href="/index.html" class="ul">Home</a></li>
+                        <li><a href="#" class="ul">Contact</a></li>
+                        <li><a href="#" class="ul">Services</a></li>
+                        <li><a href="#" class="ul">About</a></li>
+                    </ul>
+                </nav>
+            </header>
+        
+    <h2 class="h1"> Our Mentors</h2>
     <h3> a good teacher is like a candel-it consumes itself to light the way for other.</h3>
     <img src="/images/rtcteam.jpeg" class="rtc-img"/>
 </div>
